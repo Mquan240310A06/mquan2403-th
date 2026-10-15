@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THPT Phú Nhuận - Toàn cảnh</title>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVnY3K8Yh1y7vBv0n2s5j3H6V8m5Yg1q0l7s4X+5b9y1Qq1Kj6c3G7v0s9K6/3QZ8n2M1y3Y4Z5a6b7c8D9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis (smooth scroll) -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+</head>
+<body>
+  <main id="site-root">
+    <!-- Hero -->
+    <header class="hero section" id="hero">
+      <div class="hero-bg" role="img" aria-label="Cổng trường THPT Phú Nhuận" style="background-image: url('https://r73troypb4obj.vcdn.cloud/website02/uploads/images/622aabe11a1b854d4e9017d7/gioi-thieu-ve-truong-thpt-phu-nhuan.jpg')"></div>
+      <div class="hero-overlay">
+        <div class="hero-card glass">
+          <h1 class="hero-title">THPT Phú Nhuận - Nơi Khởi Nguồn Đam Mê &amp; Khát Vọng</h1>
+          <p class="hero-sub">Biểu Tượng Của Đổi Mới Giáo Dục Và Môi Trường Học Tập Toàn Diện tại TP.HCM</p>
+          <div class="hero-cta">
+            <button class="btn primary" data-goto="#cards"><i class="fa-solid fa-compass"></i> Khám phá từng phân khu</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cards -->
+    <section class="section cards-section" id="cards" aria-label="Các phân khu">
+      <div class="container">
+        <div class="cards-grid">
+          <!-- Card 1 -->
+          <article class="card glass" tabindex="0" data-title="Bề dày lịch sử" data-icon="fa-history" data-summary="Thành lập năm 1976, tiền thân là trường Saint Thomas." data-detail="Ngày 24/11/1976 là ngày truyền thống. Từng bước khẳng định vị thế Top 10 trường công lập có điểm chuẩn đầu vào cao nhất TP.HCM. Vinh dự nhận Huân chương Lao động hạng Ba (2010).">
+            <div class="card-icon"><i class="fa-solid fa-history"></i></div>
+            <h3 class="card-title">Bề dày lịch sử</h3>
+            <p class="card-summary">Thành lập năm 1976, tiền thân là trường Saint Thomas.</p>
+            <button class="card-btn btn" aria-label="Xem chi tiết Bề dày lịch sử">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card glass" tabindex="0" data-title="Cơ sở vật chất chuẩn Quốc gia" data-icon="fa-building" data-summary="Hơn 50 phòng học thông minh, thư viện mở, khu liên hợp thể thao." data-detail="Nằm tại số 5 Hoàng Minh Giám. Sở hữu hệ thống phòng thí nghiệm Lý-Hóa-Sinh chuẩn STEM, 4 phòng tin học cáp quang. Khu thể thao hoành tráng với nhà thi đấu đa năng mái vòm, sân bóng rổ, bãi tập thể lực tách biệt không gian học tập.">
+            <div class="card-icon"><i class="fa-solid fa-building"></i></div>
+            <h3 class="card-title">Cơ sở vật chất chuẩn Quốc gia</h3>
+            <p class="card-summary">Hơn 50 phòng học thông minh, thư viện mở, khu liên hợp thể thao.</p>
+            <button class="card-btn btn" aria-label="Xem chi tiết Cơ sở vật chất">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card glass" tabindex="0" data-title="Phương pháp Học qua Dự án - PBL" data-icon="fa-project-diagram" data-summary="Học sinh tự tay kiến tạo sản phẩm thực tế thay vì học vẹt." data-detail="Nổi bật với các dự án Ngữ Văn sân khấu hóa, nghiên cứu Văn hóa nghệ thuật dân gian (Múa rối nước). Các dự án STEM tự chế tạo tên lửa nước, xe thế năng, robot vi điều khiển." data-img="https://cdn2.tuoitre.vn/471584752817336320/2025/10/7/base64-1759834686025582662141.jpeg">
+            <div class="card-icon"><i class="fa-solid fa-project-diagram"></i></div>
+            <h3 class="card-title">Phương pháp Học qua Dự án - PBL</h3>
+            <p class="card-summary">Học sinh tự tay kiến tạo sản phẩm thực tế thay vì học vẹt.</p>
+            <button class="card-btn btn" aria-label="Xem chi tiết PBL">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card glass" tabindex="0" data-title="Hệ sinh thái Câu lạc bộ rực rỡ" data-icon="fa-users" data-summary="Hơn 20 Câu lạc bộ - Đội - Nhóm hoạt động chuyên nghiệp." data-detail="Điển hình như PEC (Tiếng Anh), PMC (Âm nhạc), PDC (Nhảy), PNBC (Bóng rổ), Ban Truyền thông, Đội Công tác Xã hội. Quy trình tuyển Gen khắt khe, rèn luyện kỹ năng mềm, lãnh đạo và 'Chất PNer' năng động." data-img="https://images.hcmcpv.org.vn/res/news/2022/03/27-03-2022-phu-nhuan-lien-hoan-cac-cau-lac-bo-doi-nhom-trong-truong-hoc-nam-2022-D516D4D3.jpg">
+            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+            <h3 class="card-title">Hệ sinh thái Câu lạc bộ rực rỡ</h3>
+            <p class="card-summary">Hơn 20 Câu lạc bộ - Đội - Nhóm hoạt động chuyên nghiệp.</p>
+            <button class="card-btn btn" aria-label="Xem chi tiết CLB">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card glass" tabindex="0" data-title="Đời sống học đường & Lễ hội" data-icon="fa-calendar-alt" data-summary="Các chuỗi sự kiện bùng nổ thanh xuân xuyên suốt năm học." data-detail="Lễ khai giảng rộn rã, Hội trại Truyền thống 26/3 với Flashmob hàng ngàn người và nhạc hội EDM, Hội chợ Xuân dân gian, cùng Lễ Tri ân 'Khi Tôi 18' đầy cảm xúc." data-img="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1550840406843523">
+            <div class="card-icon"><i class="fa-solid fa-calendar-alt"></i></div>
+            <h3 class="card-title">Đời sống học đường &amp; Lễ hội</h3>
+            <p class="card-summary">Các chuỗi sự kiện bùng nổ thanh xuân xuyên suốt năm học.</p>
+            <button class="card-btn btn" aria-label="Xem chi tiết Lễ hội">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section" id="footer">
+      <div class="container footer-inner glass">
+        <div class="contact">
+          <h4>Liên hệ</h4>
+          <p>THPT Phú Nhuận<br/>Số 5 Hoàng Minh Giám, Phường 9, Quận Phú Nhuận, TP.HCM</p>
+        </div>
+        <div class="socials">
+          <h4>Kết nối</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© <span id="year"></span> THPT Phú Nhuận</div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-panel glass" role="document" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Đóng" data-close><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-content">
+        <div class="modal-media" id="modal-media" aria-hidden="true"></div>
+        <h3 id="modal-title"></h3>
+        <p id="modal-detail"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
